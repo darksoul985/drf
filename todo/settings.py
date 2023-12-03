@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_filters',
     'todo',
     'todousers',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +52,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'todo.urls'
@@ -132,3 +135,7 @@ REST_FRAMEWORK = {
         }
 
 AUTH_USER_MODEL = 'todousers.TodoUser'
+
+CORS_ALLOWED_ORIGINS = [
+        'http://localhost:3000',
+        ]
