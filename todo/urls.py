@@ -18,13 +18,18 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from todousers.views import TodoUsersViewSet
+from projects.views import ProjectViewSet, NoteViewSet
 
 
 router = DefaultRouter()
-router.register('users', TodoUsersViewSet)
+router.register('users', TodoUsersViewSet, basename='users_')
+router.register('projects', ProjectViewSet)
+router.register('project/note', NoteViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('api/', include(router.urls)),
+    # path('views/api-view/<int:pk>/', TodoUsersViewSet.as_view()),
 ]
