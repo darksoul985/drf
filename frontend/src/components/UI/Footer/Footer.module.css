@@ -1,0 +1,15 @@
+.footer {
+  background: #f9f9f9;
+  flex: 0 0 auto;
+  width: 100vw;
+}
+
+.footer_ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  
+  li {
+    margin: 50px;
+  }
+}
