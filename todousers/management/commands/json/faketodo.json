@@ -1,0 +1,44 @@
+[
+  {
+    "project": "первый",
+    "user": "p@local.gb",
+    "body": "это первая задача",
+    "is_active": false
+  },
+  {
+    "project": "первый",
+    "user": "p@local.gb",
+    "body": "это вторая задача",
+    "is_active": true
+  },
+  {
+    "project": "второй",
+    "user": "r@local.gb",
+    "body": "второй проект задача",
+    "is_active": true
+  },
+  {
+    "project": "третий",
+    "user": "sam@local.gb",
+    "body": "Ну как бы третий проект задача один",
+    "is_active": true
+  },
+  {
+    "project": "четвертый",
+    "user": "sam@local.gb",
+    "body": "эта задача уже выполнена",
+    "is_active": false
+  },
+  {
+    "project": "четвертый",
+    "user": "sam@local.gb",
+    "body": "эта задача еще в работе",
+    "is_active": true
+  },
+  {
+    "project": "четвертый",
+    "user": "p@local.gb",
+    "body": "и эта задача тоже еще в работе",
+    "is_active": true
+  }
+]

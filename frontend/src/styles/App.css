@@ -44,3 +44,9 @@ td {
   padding: 9px 8px;
   transition: .3s linear;
 }
+
+.todobody{
+  width: 40%;
+  min-width: 250px;
+  align-items: left;
+}

@@ -24,7 +24,7 @@ from projects.views import ProjectViewSet, NoteViewSet
 router = DefaultRouter()
 router.register('users', TodoUsersViewSet, basename='users_')
 router.register('projects', ProjectViewSet)
-router.register('project/note', NoteViewSet)
+router.register('todo', NoteViewSet)
 
 
 urlpatterns = [

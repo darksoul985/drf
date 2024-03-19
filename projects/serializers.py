@@ -1,9 +1,10 @@
 from rest_framework import serializers
-from .models import Project, Note
+from .models import Project, Todo
 from todousers.serializers import TodoUserModelSerializer
 
 
 class ProjectSerializer(serializers.ModelSerializer):
+    #users = serializers.StringRelatedField(many=True)
     users = TodoUserModelSerializer(many=True)
 
     class Meta:
@@ -11,10 +12,10 @@ class ProjectSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class NoteSerializer(serializers.ModelSerializer):
+class TodoSerializer(serializers.ModelSerializer):
     project = serializers.StringRelatedField()
     user = TodoUserModelSerializer()
 
     class Meta:
-        model = Note
+        model = Todo
         fields = ['body', 'project', 'user', 'update', 'is_active']

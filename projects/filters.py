@@ -1,5 +1,5 @@
 from django_filters import rest_framework as filters
-from .models import Project, Note
+from .models import Project, Todo
 
 
 class ProjectFilter(filters.FilterSet):
@@ -10,10 +10,10 @@ class ProjectFilter(filters.FilterSet):
         fields = ['name']
 
 
-class NoteFilter(filters.FilterSet):
+class TodoFilter(filters.FilterSet):
     project = filters.CharFilter(field_name='project__name', lookup_expr='icontains', label='Проект')
     create_date_filter = filters.DateFromToRangeFilter(field_name='created', label='Диапазон дат создания')
 
     class Meta:
-        model = Note
+        model = Todo
         fields = ['project']

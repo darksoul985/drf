@@ -21,7 +21,7 @@ class Project(models.Model):
         ordering = ('name',)
 
 
-class Note(models.Model):
+class Todo(models.Model):
     project = models.ForeignKey(Project, verbose_name='Проект', on_delete=models.CASCADE, related_name='project')
     user = models.ForeignKey(TodoUser, verbose_name='Автор записи', on_delete=models.RESTRICT)
     body = models.TextField(verbose_name='Текст заметки')

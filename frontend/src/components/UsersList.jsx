@@ -6,18 +6,27 @@ const UsersList = ({users, title}) => {
     <div className="content">
       <h1 style={{ textAline: "center" }}>{title}</h1>
       <table>
-        <th>
-          Username
-        </th>
-        <th>
-          First name
-        </th>
-        <th>
-          Last name
-        </th>
-        {users.map((user) => (
-        <UsersItem user={user} key={user.id}/>
-      ))}
+        <thead>
+          <tr>
+            <th>
+              Пользователь
+            </th>
+            <th>
+              Имя
+            </th>
+            <th>
+              Фамилия
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            users.map((user, index) => (
+            <UsersItem user={user} key={index}/>
+            )
+            )
+          }
+        </tbody>
       </table> 
     </div>
   );

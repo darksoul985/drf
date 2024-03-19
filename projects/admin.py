@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Project, Note
+from .models import Project, Todo
 
 # admin.site.register(Project)
 # admin.site.register(Note)
@@ -14,7 +14,7 @@ class ProjectAdmin(admin.ModelAdmin):
     ordering = ['name']
 
 
-@admin.register(Note)
+@admin.register(Todo)
 class NoteAdmin(admin.ModelAdmin):
     list_display = ['project', 'body', 'user', 'created', 'update', 'is_active']
     list_filter = ['project', 'user', 'is_active']

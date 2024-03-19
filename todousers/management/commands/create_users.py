@@ -16,10 +16,8 @@ class Command(BaseCommand):
         except:
             raise ValueError(f'Файл {file_name}.json не найден по адресу: {settings.BASE_DIR}/todousers/management/commands/json/')
 
-
     def handle(self, *args, **options):
-
-        fake_users = self._load_data_from_file('faceusers')
+        fake_users = self._load_data_from_file('fakeusers')
 
         TodoUser.objects.all().delete()
         for i in fake_users:
@@ -30,8 +28,6 @@ class Command(BaseCommand):
                 email=i['email'],
                 password='qwerty1',
             )
-
-        TodoUser.objects.create()
 
         TodoUser.objects.create_superuser(
             username='soul',
