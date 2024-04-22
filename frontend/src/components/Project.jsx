@@ -8,9 +8,6 @@ const Project = ({projects, todolist}) => {
   let {projectId} = useParams();
   let filter_project = projects.filter((project) => project.id === parseInt(projectId));
   let filter_project_todo = todolist.filter((todo) => todo.project === filter_project[0].name)
-  console.log(todolist)
-  console.log(filter_project)
-  //console.log(filter_project_todo)
 
   return (
     <div className="content">

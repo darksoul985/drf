@@ -26,7 +26,7 @@ class Command(BaseCommand):
                 first_name=i['first_name'],
                 last_name=i['last_name'],
                 email=i['email'],
-                password='qwerty1',
+                password='123',
             )
 
         TodoUser.objects.create_superuser(
@@ -34,5 +34,5 @@ class Command(BaseCommand):
             first_name='serg',
             last_name='sh',
             email='sh@local.gb',
-            password='qwerty1'
+            password='123'
         )
