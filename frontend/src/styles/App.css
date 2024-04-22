@@ -18,7 +18,7 @@ div {
   justify-content: top;
   align-items: center;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   font-family: Hack, monospace;
 }
 
