@@ -24,7 +24,7 @@ class ProjectViewSet(ModelViewSet):
     filterset_class = ProjectFilter
 
 
-class NoteViewSet(ModelViewSet):
+class TodoViewSet(ModelViewSet):
     # renderer_classes = [BrowsableAPIRenderer]
     queryset = Todo.objects.all()
     serializer_class = TodoSerializer
