@@ -1,0 +1,20 @@
+[
+  {
+    "username": "писатель",
+    "first_name": "Александр",
+    "last_name": "Пушкин",
+    "email": "p@local.gb"
+  },
+    {
+      "username": "герой",
+      "first_name": "Родион",
+      "last_name": "Раскольников",
+      "email": "r@local.gb"
+    },
+    {
+      "username": "другой",
+      "first_name": "Сэм",
+      "last_name": "Серьезный",
+      "email": "sam@local.gb"
+    }
+]

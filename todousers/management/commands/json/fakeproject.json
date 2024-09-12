@@ -1,0 +1,22 @@
+[
+  {
+    "name": "первый",
+    "repo": "/первый/1",
+    "users": ["p@local.gb"]
+  },
+  {
+    "name": "второй",
+    "repo": "/второй/2",
+    "users": ["r@local.gb"]
+  },
+  {
+    "name": "третий",
+    "repo": "/третий/3",
+    "users": ["sam@local.gb"]
+  },
+  {
+    "name": "четвертый",
+    "repo": "/четвертый/4",
+    "users": ["sam@local.gb", "p@local.gb"]
+  }
+]
